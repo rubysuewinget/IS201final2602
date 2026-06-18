@@ -1,0 +1,39 @@
+<html> 
+<head> 
+<title>Silly Word Generator</title> 
+<style> 
+body { 
+    font-family: Arial, sans-serif; 
+    text-align: center; 
+    margin-top: 100px; 
+    background-color: white; } 
+    h1 { 
+        color: #4b4b8f; 
+    font-weight: bold; } 
+    #word { 
+        font-size: 32px; 
+        margin: 30px; 
+        font-weight: bold; }
+    button { 
+        padding: 10px 20px; 
+        font-size: 18px; 
+        border: none; 
+        border-radius: 8px; 
+        cursor: pointer; } 
+</style> 
+</head> 
+<body> 
+    <a href="index.html">Back to Home</a>
+    <a href="resume.html">View Resume</a>
+    <a href="game.html">Play A Game</a>
+    <h1>Silly Word Generator</h1> 
+    <p>Click the button to generate a word combo!</p> 
+    <div id="word"></div> 
+    <button onclick="generateWord()">Generate Word</button> 
+    <script> const adjectives = [ "Sparkly", "Dancing", "Sleepy", "Wiggly", "Flying", "Grumpy" ]; 
+    const nouns = [ "Pickle", "Dragon", "Potato", "Unicorn", "Penguin", "Taco" ]; 
+    function generateWord() { const adjective = adjectives[Math.floor(Math.random() * adjectives.length)]; 
+    const noun = nouns[Math.floor(Math.random() * nouns.length)]; document.getElementById("word").textContent = adjective + " " + noun; } 
+    </script> 
+    </body> 
+</html>

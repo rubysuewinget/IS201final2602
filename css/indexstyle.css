@@ -1,0 +1,51 @@
+
+body {
+    background-color: #dfeef5;
+    font-family: Georgia, serif;
+    color: #2d3748;
+    margin: 0;
+}
+
+.nav {
+    background-color: #1f4e79;
+    padding: 15px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.header {
+    text-align: center;
+    padding: 40px;
+}
+
+.content,
+.images,
+.video,
+.tableau {
+    background-color: white;
+    margin: 20px;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+h1, h2 {
+    color: #1f4e79;
+}
+
+.images img {
+    width: 45%;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+}
+
+.footer a {
+    color: #1f4e79;
+}
